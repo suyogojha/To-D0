@@ -1,0 +1,21 @@
+
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = 'stylesheet' href = "{% static 'style.css' %}">
+</head>
+<body>
+    <div id = 'container'>
+        <div id = 'formContainer'>
+            <form method="POST">
+                {% csrf_token %}
+                {{updateform.task}}
+                <button id = 'add' type = 'submit'>add</button>
+            </form>
+            </div>
+            </div>
